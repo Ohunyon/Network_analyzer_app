@@ -1,0 +1,34 @@
+2025-02-19 17:11:07,046:WARNING:/home/seyman/Threat dectection ola's project/venv/lib/python3.10/site-packages/sklearn/base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.4.2 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2025-02-19 17:11:07,047:WARNING:/home/seyman/Threat dectection ola's project/venv/lib/python3.10/site-packages/sklearn/base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.4.2 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2025-02-19 17:11:07,053:WARNING:/home/seyman/Threat dectection ola's project/venv/lib/python3.10/site-packages/sklearn/base.py:318: UserWarning: Trying to unpickle estimator GaussianNB from version 1.4.2 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2025-02-19 17:11:07,692:WARNING:/home/seyman/Threat dectection ola's project/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '75.8.0', 'pycaret': '3.0.4', 'IPython': '8.32.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.5', 'scipy': '1.15.2', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.10.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.36.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.61.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-02-20 09:12:53,923:WARNING:/home/seyman/Threat dectection ola's project/venv/lib/python3.10/site-packages/sklearn/base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.4.2 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2025-02-20 09:12:53,962:WARNING:/home/seyman/Threat dectection ola's project/venv/lib/python3.10/site-packages/sklearn/base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.4.2 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2025-02-20 09:12:53,967:WARNING:/home/seyman/Threat dectection ola's project/venv/lib/python3.10/site-packages/sklearn/base.py:318: UserWarning: Trying to unpickle estimator GaussianNB from version 1.4.2 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2025-02-20 09:12:54,286:WARNING:/home/seyman/Threat dectection ola's project/venv/lib/python3.10/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '75.8.0', 'pycaret': '3.0.4', 'IPython': '8.32.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.5', 'scipy': '1.15.2', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.10.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.36.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.61.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+

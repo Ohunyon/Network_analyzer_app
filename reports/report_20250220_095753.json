@@ -1,0 +1,17 @@
+{
+    "generated_at": "2025-02-20 09:57:53",
+    "period": {
+        "start": "All time",
+        "end": "All time"
+    },
+    "summary": {
+        "total_packets": 17,
+        "malicious_packets": 17,
+        "benign_packets": 0,
+        "malicious_percentage": 100.0
+    },
+    "top_malicious_sources": {
+        "172.29.91.0": 10,
+        "13.89.178.27": 7
+    }
+}
