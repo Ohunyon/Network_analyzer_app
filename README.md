@@ -14,7 +14,7 @@ A real-time network traffic analyzer that monitors packets, detects malicious tr
 
 ## Requirements
 
-- Python 3.10 or higher
+- Python 3.10 or lower
 - Virtual environment
 - Root privileges (for packet capture)
 - Required Python packages (see requirements.txt)
