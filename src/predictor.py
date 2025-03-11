@@ -4,6 +4,7 @@ from datetime import datetime
 import json
 import os
 from pdf_report import PDFReportGenerator
+from google_ip_ranges import is_google_ip
 
 class NetworkPredictor:
     def __init__(self, model_path="model/my_model.pkl"):
@@ -12,8 +13,8 @@ class NetworkPredictor:
         
     def predict_single(self, packet_info):
         try:
-            # Check for known benign IP addresses in either source or destination
-            if packet_info['Destination'] == '216.58.223.206' or packet_info['Source'] == '216.58.223.206':  # Google IP
+            # Check if either source or destination is a Google IP
+            if is_google_ip(packet_info['Destination']) or is_google_ip(packet_info['Source']):
                 prediction = 0  # Benign
             else:
                 # Extract destination and create a pandas Series
@@ -45,10 +46,10 @@ class NetworkPredictor:
             if 'Destination' not in df.columns:
                 raise ValueError("DataFrame must contain 'Destination' column")
             
-            # Create predictions array considering known benign IPs in either source or destination
+            # Create predictions array considering Google IPs in either source or destination
             predictions = []
             for idx in df.index:
-                if df.at[idx, 'Destination'] == '216.58.223.206' or df.at[idx, 'Source'] == '216.58.223.206':  # Google IP
+                if is_google_ip(df.at[idx, 'Destination']) or is_google_ip(df.at[idx, 'Source']):
                     predictions.append(0)  # Benign
                 else:
                     raw_prediction = self.model.predict(pd.Series([df.at[idx, 'Destination']]))[0]
