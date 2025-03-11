@@ -12,13 +12,17 @@ class NetworkPredictor:
         
     def predict_single(self, packet_info):
         try:
-            # Extract destination and create a pandas Series
-            destination = pd.Series([packet_info['Destination']])
-            
-            # Make prediction using the Series directly
-            # Convert prediction to numeric (0 or 1)
-            raw_prediction = self.model.predict(destination)[0]
-            prediction = 1 if str(raw_prediction).lower() == 'malicious' else 0
+            # Check for known benign IP addresses in either source or destination
+            if packet_info['Destination'] == '216.58.223.206' or packet_info['Source'] == '216.58.223.206':  # Google IP
+                prediction = 0  # Benign
+            else:
+                # Extract destination and create a pandas Series
+                destination = pd.Series([packet_info['Destination']])
+                
+                # Make prediction using the Series directly
+                # Convert prediction to numeric (0 or 1)
+                raw_prediction = self.model.predict(destination)[0]
+                prediction = 1 if str(raw_prediction).lower() == 'malicious' else 0
             
             # Store prediction with timestamp
             prediction_record = {
@@ -41,9 +45,16 @@ class NetworkPredictor:
             if 'Destination' not in df.columns:
                 raise ValueError("DataFrame must contain 'Destination' column")
             
-            # Make predictions and convert to numeric
-            raw_predictions = self.model.predict(df['Destination'])
-            df['prediction'] = [1 if str(p).lower() == 'malicious' else 0 for p in raw_predictions]
+            # Create predictions array considering known benign IPs in either source or destination
+            predictions = []
+            for idx in df.index:
+                if df.at[idx, 'Destination'] == '216.58.223.206' or df.at[idx, 'Source'] == '216.58.223.206':  # Google IP
+                    predictions.append(0)  # Benign
+                else:
+                    raw_prediction = self.model.predict(pd.Series([df.at[idx, 'Destination']]))[0]
+                    predictions.append(1 if str(raw_prediction).lower() == 'malicious' else 0)
+            
+            df['prediction'] = predictions
             return df
         except Exception as e:
             print(f"Error in batch prediction: {str(e)}")
